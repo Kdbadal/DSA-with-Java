@@ -1,0 +1,83 @@
+psuedo code:
+    procedure(Erray,value)
+
+        for each item in the list
+            if match the item == value
+               return item's location
+            end if
+        end for
+
+    end procedure
+
+
+algorithms
+    
+        linear Search(Erray, value)
+
+        step 1: set index to 1
+        Step 2: if 1>n them go to step 7
+        step 3: if A[i] = x then go to step 6
+        Step 4: Set i to i + 1
+        Step 5: Go to Step 2
+        Step 6: Print Element x Found at index i and go to step 8
+        Step 7: Print element not found
+        Step 8: Exit
+
+code 
+
+public class lienearSearch{
+        public static void main(String[] args){
+            int[] num = {20,66,985,55,58,52,12,5};
+            int target = 55;
+            int ans = linearSearch(num,target);
+            System.out.println(ans);
+    }
+        //---//creating a method or function for linear search of data(one by one)
+          public static int linearSearch(int[] Array, int target){
+        //--// creating and erray and target value that we want to find
+            if Array.length == 0{
+                return -1;
+            }
+
+            for(int index=0;index<Array.length; index++){
+                    int element = array[index];
+                    if(element == target){
+                        return index;   
+                    }
+
+            }
+        return -1;
+
+    }
+}
+
+
+    package kush.searching;
+    public class lenearSearch {
+        public static void main(String[] args) {
+                int[] nums={10,25,36,8,22,566,65,62,115};
+                int target=65;
+                int ans= linearSearch(nums,target);
+                System.out.println(ans);
+        }
+        // Search in the Array:retunr the items if found or -1
+        static int linearSearch(int[] array, int target) {
+            if (array.length == 0) {
+                return -1;
+            }
+
+            //run a for loop
+            for (int index = 0; index < array.length; index++) {
+                //check for element to the target
+                int element = array[index];
+                if (element == target) {
+                    return index;
+                }
+            }
+                return -1;
+        }
+    }
+
+            
+
+
